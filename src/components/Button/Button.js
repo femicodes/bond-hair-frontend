@@ -10,7 +10,9 @@ const Button = ({ text, color }) => {
     width: '218px',
     borderRadius: '50px',
     fontSize: '25px',
-    fontWeight: '300'
+    fontWeight: '400',
+    fontFamily: 'Gilroy, sans-serif',
+    textAlign: 'center'
   };
   return (
     <button
