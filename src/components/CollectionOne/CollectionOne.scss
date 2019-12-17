@@ -1,0 +1,37 @@
+.parent_collection__one {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 229, 0.3);
+
+    .collection_one__text {
+      margin-left: 5%;
+
+        hr {
+          border: 0.5px solid #000000;
+          width: 134px;
+          height: 0px;
+          margin-right: 300px;
+        }
+
+        .collection_one__frontal {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+        }
+
+        .collection_one__arrival {
+          width: 300px;
+          height: 57px;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 57px;
+          letter-spacing: 0.05em;
+          color: #000000;
+          margin-top: 12px;
+        }
+    }
+}

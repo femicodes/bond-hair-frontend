@@ -1,5 +1,4 @@
 import React from 'react';
-import './Button.scss';
 
 const Button = ({ text, color }) => {
   const style = {
@@ -12,7 +11,7 @@ const Button = ({ text, color }) => {
     fontSize: '25px',
     fontWeight: '400',
     fontFamily: 'Gilroy, sans-serif',
-    textAlign: 'center'
+    alignContent: 'center'
   };
   return (
     <button
