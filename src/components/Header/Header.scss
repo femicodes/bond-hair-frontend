@@ -1,0 +1,27 @@
+body{
+  margin: 0
+}
+
+.parent_header {
+  display: flex;
+   
+  align-items: center;
+  align-content: space-between;
+  position: sticky;
+  justify-content: space-between;
+  padding: 0.8rem;
+
+  .header_circles {
+    margin-left: 150px;
+  }
+
+    .header_icons {   
+      width: 10%;
+      display: flex;
+      justify-content: space-between;
+      margin-right: 100px;
+      img {
+        background-size: contain;
+      }
+    }
+}
