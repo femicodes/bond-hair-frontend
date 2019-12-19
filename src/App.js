@@ -4,6 +4,7 @@ import Jumbotron from './components/Jumbotron/Jumbotron';
 import CollectionOne from './components/CollectionOne/CollectionOne';
 import CollectionTwo from './components/CollectionTwo/CollectionTwo';
 import CollectionThree from './components/CollectionThree/CollectionThree';
+import MidJumbotron from './components/MidJumbotron';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <CollectionOne />
       <CollectionTwo />
       <CollectionThree />
+      <MidJumbotron />
     </div>
   );
 }

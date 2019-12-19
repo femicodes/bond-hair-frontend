@@ -1,0 +1,28 @@
+.parent_mid__jumbotron {
+  background-image: url('../res/mid-jumbotron.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+    .mid_jumbotron__content {
+      color: white;
+      text-align: left;
+      padding-top: 13%;
+      margin-left: 180px;
+      margin-top: 112px;
+       div {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 60px;
+        letter-spacing: 0.05em;
+       }
+
+       .mid_button {
+         margin-top: 20px;
+       }
+    }
+}

@@ -6,12 +6,12 @@ const Button = ({ text, color }) => {
     background: 'transparent',
     padding: '10px',
     border: `1px solid ${color}`,
-    width: '218px',
+    width: '228px',
     borderRadius: '50px',
     fontSize: '25px',
     fontWeight: '400',
     fontFamily: 'Gilroy, sans-serif',
-    alignContent: 'center'
+    textAlign: 'center'
   };
   return (
     <button
