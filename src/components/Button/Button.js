@@ -11,7 +11,8 @@ const Button = ({ text, color }) => {
     fontSize: '25px',
     fontWeight: '400',
     fontFamily: 'Gilroy, sans-serif',
-    textAlign: 'center'
+    textAlign: 'center',
+    outline: 'none',
   };
   return (
     <button
