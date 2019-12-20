@@ -1,0 +1,50 @@
+.parent_footer {
+  background-color: rgba(255, 255, 229, 0.3);
+  height: 309px;
+  width: 100%;
+  display: flex;
+  padding-top: 1px;
+  justify-content: space-around;
+  align-items: center;
+
+    .about_footer {
+      margin-bottom: 20px;
+        .footer_header {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 233.3%;
+          letter-spacing: 0.05em;
+        }
+    }
+
+    .bond_footer {
+      text-align: left;
+      p {
+        margin-left: 30px;
+      }
+    }
+
+    .useful_footer {
+      margin-top: 40px;
+        .footer_header {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 233.3%;
+          letter-spacing: 0.05em;
+      }
+    }
+
+    .follow_footer {
+      margin-top: 30px;
+      .footer_header {
+        font-weight: 600;
+          font-size: 18px;
+          line-height: 233.3%;
+          letter-spacing: 0.05em;
+      }
+    }
+
+    .sub_footer {
+      color: grey;
+    }
+}

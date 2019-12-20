@@ -6,6 +6,7 @@ import CollectionTwo from './components/CollectionTwo/CollectionTwo';
 import CollectionThree from './components/CollectionThree/CollectionThree';
 import MidJumbotron from './components/MidJumbotron';
 import Socials from './components/Socials';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <CollectionThree />
       <MidJumbotron />
       <Socials />
+      <Footer />
     </div>
   );
 }
