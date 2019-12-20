@@ -1,0 +1,66 @@
+.parent_socials {
+  background-color: white;
+  padding-top: 86px;
+    hr {
+      width: 134px;
+      margin-left: 493px;
+    }
+    .social_follow {
+      margin-left: 493px;
+      margin-top: 15px;
+      width: 460px;
+      height: 45px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 45px;
+      letter-spacing: 0.05em;
+    }
+
+    .social_images {
+      display: flex;
+      flex-direction: row-reverse;
+      padding-right: 30px;
+    }
+
+    .social_medias {
+      display: flex;
+      align-content: center;
+      margin-top: 50px;
+      margin-left: 600px;
+       img {
+         padding-right: 77px;
+         color: #010002;
+       }
+    }
+
+    .social_shipping {
+      display: flex;
+      margin-top: 80px;
+      justify-content: space-around;
+      text-align: center;
+      align-content: center;
+
+        .boxes {
+          width: 420px;
+
+          .return_header {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 33px;
+            letter-spacing: 0.05em;
+            color: #000000;
+          }
+
+          .sub_header {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            letter-spacing: 0.05em;
+            color: rgba(0, 0, 0, 0.37);
+          }
+        }
+    }
+}
