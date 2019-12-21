@@ -9,7 +9,8 @@ const style = {
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
   backgroundSize: 'cover',
-  height: '356px'
+  height: '356px',
+  marginLeft: '20px'
 };
 
 const ProductJumbotron = () => {
