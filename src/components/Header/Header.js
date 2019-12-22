@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../res/main-logo.svg';
 import Circles from '../res/3-circles.svg';
 import SearchIcon from '../res/search-icon.svg';
@@ -13,7 +14,9 @@ const Header = () => {
         <img src={Circles} alt='3 circles' />
       </div>
       <div className='header_logo'>
-        <img src={Logo} alt='main logo' />
+        <Link to='/'>
+          <img src={Logo} alt='main logo' />
+        </Link>
       </div>
       <div className='header_icons'>
         <img src={SearchIcon} alt='search icon' />

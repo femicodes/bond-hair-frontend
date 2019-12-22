@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Button = ({ text, color }) => {
+const Button = ({ text, color, link }) => {
   const style = {
     color,
     background: 'transparent',
@@ -13,12 +14,18 @@ const Button = ({ text, color }) => {
     fontFamily: 'Gilroy, sans-serif',
     textAlign: 'center',
     outline: 'none',
+    cursor: 'pointer',
   };
+
+  const buttonLink = `/${link === undefined ? 'products' : link}`;
+
   return (
-    <button
-      style={style}>
-      {text}
-    </button>
+    <Link to={buttonLink} >
+      <button
+        style={style}>
+        {text}
+      </button>
+    </Link>
   );
 };
 

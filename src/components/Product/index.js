@@ -10,9 +10,10 @@ const style = {
   display: 'flex',
   justifyContent: 'space-around',
   flexWrap: 'wrap',
-  paddingLeft: '140px',
+  paddingLeft: '40px',
   paddingTop: '40px',
   height: 'auto',
+  width: 'auto'
 };
 
 const Product = () => {

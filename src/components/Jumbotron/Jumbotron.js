@@ -9,7 +9,7 @@ const Jumbotron = () => {
         <p className='jumbotron_frontal'>FRONTAL COLLECTION</p>
         <p className='jumbotron_free'>Feel free and <br /> freestyle</p>
         <div className='jumbotron_button'>
-          <Button text='Shop Collection' color='white' />
+          <Button text='Shop Collection' color='white' link='products' />
         </div>
       </div>
       <div></div>
