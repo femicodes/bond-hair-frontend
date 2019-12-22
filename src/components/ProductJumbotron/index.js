@@ -13,11 +13,11 @@ const style = {
   marginLeft: '20px'
 };
 
-const ProductJumbotron = () => {
+const ProductJumbotron = ({ text, image }) => {
   return (
     <div style={style} className='product_jumbotron'>
-      <img src={productLine} alt='product line' />
-      <p>All Products</p>
+      <img src={productLine || image} alt='product line' />
+      <p>{'All Products' || text}</p>
     </div>
   );
 };
