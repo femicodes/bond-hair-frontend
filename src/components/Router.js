@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import App from '../App';
 import AllProducts from '../pages/AllProducts';
+import ProductDetail from '../pages/ProductDetail';
 import NotFound from './NotFound/NotFound';
 
 const Router = () => (
@@ -9,6 +10,7 @@ const Router = () => (
     <Switch>
       <Route exact path='/' component={App} />
       <Route path='/products' component={AllProducts} />
+      <Route path='/one' component={ProductDetail} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>
