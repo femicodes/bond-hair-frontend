@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import productHeart from '../res/product-heart.svg';
 import './index.scss';
 
@@ -19,7 +20,11 @@ const ProductCard = ({ image, text, price }) => {
         </div>
       </div>
       <img style={style} src={image} alt='productCard' />
-      <p className='product_text'>{text}</p>
+      <p className='product_text'>
+        <Link to='/ones' style={{ textDecoration: 'none', color: '#000000' }}>
+          {text}
+        </Link>
+      </p>
       <p className='product_price'>${price}</p>
     </section>
   );

@@ -6,11 +6,13 @@
     .gallery {
       .sub_main {
         width: 723px;
+        margin-left: 3px;
       }
       .sub_photos {
-        width: 723px;
+        display: flex;
+        justify-items: space-between;
         img {
-          margin-left: 10px;
+          margin-left: 15px;
         }
       }
     }
@@ -139,5 +141,98 @@
               }
           }
       }
+    }
+}
+
+.parent_product__details {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-around;
+    .sub_product__details {
+      width: 569px;
+      text-align: left;
+        p {
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 33px;
+          letter-spacing: 0.05em;
+        }
+
+        div {
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 180.2%;
+          letter-spacing: 0.05em;
+        }
+    }
+
+    .sub_product__specifications {
+      width: 492px;
+        p {
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 33px;
+          letter-spacing: 0.05em;
+        }
+        ul li {
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 180.2%;
+          letter-spacing: 0.05em;
+          margin-left: -28px;
+        }
+    }
+}
+
+.review_layout {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 90px;
+  padding: 0;
+
+  .main_review__layouts {
+    display: flex;
+    width: 80%;
+    align-content: center;
+  }
+
+  .review_header {
+    padding-bottom: 10px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+  }
+}
+
+.similar_products {
+  margin-top: 100px;
+    .similar_products__header {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 45px;
+      letter-spacing: 0.05em;
+      margin-left: 80px;
+    }
+
+    .similar_products__layout {
+      width: 80%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-left: 80px;
     }
 }

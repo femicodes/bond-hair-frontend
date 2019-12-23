@@ -1,0 +1,21 @@
+.main_reviews {
+  padding: 15px 60px;
+    .review_name {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 180.2%;
+      letter-spacing: 0.05em;
+    }
+
+    .review_body {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 180.2%;
+      letter-spacing: 0.05em;
+      width: 300px;
+    }
+}
