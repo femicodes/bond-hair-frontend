@@ -21,7 +21,9 @@ const Header = () => {
       <div className='header_icons'>
         <img src={SearchIcon} alt='search icon' />
         <img src={HeartIcon} alt='heart icon' />
-        <img src={CartIcon} alt='cart icon' />
+        <Link to='/cart'>
+          <img src={CartIcon} alt='cart icon' />
+        </Link>
       </div>
     </div>
   );

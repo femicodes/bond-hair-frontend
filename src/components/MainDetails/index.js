@@ -1,5 +1,6 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import Select from 'react-select';
+import Modal from 'react-modal';
 import Reviews from '../Reviews';
 import Footer from '../Footer';
 import ProductCard from '../ProductCard';
@@ -11,6 +12,7 @@ import gallery2 from '../res/sub-detail2.svg';
 import ruler from '../res/ruler.svg';
 import check from '../res/check-mark.svg';
 import star from '../res/star.svg';
+import hairGuide from '../res/hair-guide.svg';
 import './index.scss';
 
 const closureOptions = [
@@ -30,7 +32,7 @@ const selectStyles = {
     border: '1px solid #000000',
     width: '230px',
     borderRadius: '20px',
-    padding: '5px',
+    padding: '6px 10px',
     backgroundColor: 'rgba(255, 255, 229, 0.3)',
     fontFamily: 'Gilroy',
     fontStyle: 'normal',
@@ -53,7 +55,7 @@ const itemStyles = {
     border: '1px solid #000000',
     width: '101px',
     borderRadius: '20px',
-    padding: '5px',
+    padding: '5px 10px',
     backgroundColor: 'rgba(255, 255, 229, 0.3)',
     fontFamily: 'Gilroy',
     fontStyle: 'normal',
@@ -70,7 +72,27 @@ const itemStyles = {
   }),
 };
 
+const modalStyles = {
+  content: {
+    width: '1000px',
+    height: '455px',
+    display: 'flex',
+    marginTop: '50px',
+    marginLeft: '170px'
+  }
+}
+
 const MainDetails = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <Fragment>
       <div className='parent_main__details'>
@@ -99,7 +121,15 @@ const MainDetails = () => {
           </div>
           <div className='main_description__guide'>
             <img src={ruler} alt='guide' />
-            <p>Size Guide</p>
+            <p onClick={openModal}>Size Guide</p>
+            <Modal
+              isOpen={isModalOpen}
+              onRequestClose={closeModal}
+              style={modalStyles}
+              ariaHideApp={false}
+            >
+              <img src={hairGuide} alt='hair guide' />
+            </Modal>
           </div>
           <div className='main_description__dropdown'>
             <Select placeholder='Hair Closure' styles={selectStyles} options={closureOptions} />
