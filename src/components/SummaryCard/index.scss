@@ -1,9 +1,22 @@
 .parent_summary__card {
   display: flex;
   justify-content: space-between;
+  width: 420px;
   .main__details {
     padding-left: 12px;
+    .order_summary__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+        .order_summary__actions {
+          display: flex;
+          width: 50px;
+          justify-content: space-between;
+        }     
+    }
+
     .order_summary__heading {
+      margin-top: 30px;
       font-family: Gilroy;
       font-style: normal;
       font-weight: normal;
