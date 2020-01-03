@@ -29,7 +29,7 @@ const Header = () => {
           <img src={CartIcon} alt='cart icon' onClick={toggleDrawer} />
         </div>
       </div>
-      <CartDrawer isOpen={isOpen} />
+      <CartDrawer isOpen={isOpen} setOpen={setIsOpen} />
     </Fragment>
   );
 };

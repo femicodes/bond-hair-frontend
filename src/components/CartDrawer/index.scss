@@ -55,6 +55,7 @@
             .drawer__nav--close {
               display: flex;
                 .close--icon {
+                  cursor: pointer;
                   padding-left: 30px;
                 }
             }
@@ -62,6 +63,8 @@
 
     .drawer__summary--card {
       padding: 15.49px 27px 2px 27px;
+      overflow-x: auto;
+      height: 56vh;
     }
 
     .drawer__coupon--form {

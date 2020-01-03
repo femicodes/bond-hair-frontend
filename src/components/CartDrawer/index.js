@@ -6,12 +6,17 @@ import CloseCart from '../res/close-cart.svg';
 import CartLine from '../res/cart-line.svg';
 import './index.scss';
 
-const CartDrawer = ({ isOpen }) => {
+const CartDrawer = ({ isOpen, setOpen }) => {
   /* const insertOverflow = document.body.style.overflow = 'hidden';
   const removeOverflow = document.body.style.overflow = 'visible';
   const portLand = isOpen === 'true' ? insertOverflow : removeOverflow; */
+
+  const closeDrawer = () => {
+    setOpen(false);
+  };
+
   return (
-    <div className={`drawer__container ${!isOpen && "drawer__container--isOpen"}`}>
+    <div className={`drawer__container ${isOpen && "drawer__container--isOpen"}`}>
       <div className='drawer__nav--parent'>
         <div className='drawer__nav--tabs'>
           <div className='drawer__nav--item active_tab'>
@@ -25,10 +30,12 @@ const CartDrawer = ({ isOpen }) => {
         </div>
         <div className='drawer__nav--close'>
           <img src={CartLine} alt='cart-line' />
-          <img className='close--icon' src={CloseCart} alt='close-cart' />
+          <img onClick={closeDrawer} className='close--icon' src={CloseCart} alt='close-cart' />
         </div>
       </div>
       <div className='drawer__summary--card'>
+        <SummaryCard showActions={true} />
+        <SummaryCard showActions={true} />
         <SummaryCard showActions={true} />
         <SummaryCard showActions={true} />
       </div>
