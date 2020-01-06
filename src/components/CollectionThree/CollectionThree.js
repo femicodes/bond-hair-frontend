@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../Button/Button';
 import Image from '../res/collection-three.svg';
 import ProductImage from '../res/popular-product.svg';
@@ -28,9 +29,12 @@ const CollectionThree = () => {
           <ProductCard image={ProductImage} text='Paruvian hair frontal wig' price='100' />
           <ProductCard image={AnotherImage} text='Paruvian hair frontal wig' price='100' />
           <ProductCard image={ProductImage} text='Paruvian hair frontal wig' price='100' />
+          <ProductCard image={ProductImage} text='Paruvian hair frontal wig' price='100' />
         </div>
       </div>
-      <div className='product_load'>Load More ...</div>
+      <Link to='/products'>
+        <div className='product_load'>Load More ...</div>
+      </Link>
     </div>
   );
 };

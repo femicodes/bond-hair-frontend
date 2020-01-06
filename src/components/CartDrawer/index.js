@@ -7,9 +7,6 @@ import CartLine from '../res/cart-line.svg';
 import './index.scss';
 
 const CartDrawer = ({ isOpen, setOpen }) => {
-  /* const insertOverflow = document.body.style.overflow = 'hidden';
-  const removeOverflow = document.body.style.overflow = 'visible';
-  const portLand = isOpen === 'true' ? insertOverflow : removeOverflow; */
 
   const closeDrawer = () => {
     setOpen(false);

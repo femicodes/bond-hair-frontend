@@ -1,17 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import productHeart from '../res/product-heart.svg';
+import CardImage from '../res/popular-product.svg';
 import './index.scss';
 
-const ProductCard = ({ image, text, price }) => {
+const ProductCard = ({ image, key, text, price }) => {
   const style = {
-    width: '245.68px',
-    height: '269.37px'
+    backgroundImage: `url(${image || CardImage})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    borderTopLeftRadius: '20px',
+    borderTopRightRadius: '20px',
   };
 
   return (
-    <section className='product_card'>
-      <div className='product_upper'>
+    <section key={key} className='product_card'>
+      <div style={style} className='product_upper'>
         <div className='sale'>
           <p>Sale</p>
         </div>
@@ -19,13 +24,14 @@ const ProductCard = ({ image, text, price }) => {
           <img src={productHeart} alt='product heart' />
         </div>
       </div>
-      <img style={style} src={image} alt='productCard' />
-      <p className='product_text'>
-        <Link to='/ones' style={{ textDecoration: 'none', color: '#000000' }}>
-          {text}
-        </Link>
-      </p>
-      <p className='product_price'>${price}</p>
+      <div className='product_bottom'>
+        <p className='product_text'>
+          <Link to='/ones' style={{ textDecoration: 'none', color: '#000000' }}>
+            {text}
+          </Link>
+        </p>
+        <p className='product_price'>${price}</p>
+      </div>
     </section>
   );
 };
